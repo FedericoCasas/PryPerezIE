@@ -21,5 +21,25 @@ namespace PryPerezIE
         {
             Application.Exit();
         }
+
+        private void agragarProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CargarProveedores cargarProveedores = new CargarProveedores();
+            cargarProveedores.Show();
+            this.Hide();
+
+        }
+
+        private void verArchivosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VerArchivos verArchivo = new VerArchivos();
+            verArchivo.Show();
+            this.Hide();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

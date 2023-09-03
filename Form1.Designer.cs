@@ -33,6 +33,7 @@
             this.tmProgreso = new System.Windows.Forms.Timer(this.components);
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.lblPorcentaje = new System.Windows.Forms.Label();
+            this.lblNombreAseguradora = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tmProgreso
@@ -62,18 +63,31 @@
             this.lblPorcentaje.TabIndex = 1;
             this.lblPorcentaje.Text = "0%";
             // 
+            // lblNombreAseguradora
+            // 
+            this.lblNombreAseguradora.AutoSize = true;
+            this.lblNombreAseguradora.BackColor = System.Drawing.Color.Transparent;
+            this.lblNombreAseguradora.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreAseguradora.ForeColor = System.Drawing.Color.Yellow;
+            this.lblNombreAseguradora.Location = new System.Drawing.Point(193, 400);
+            this.lblNombreAseguradora.Name = "lblNombreAseguradora";
+            this.lblNombreAseguradora.Size = new System.Drawing.Size(481, 51);
+            this.lblNombreAseguradora.TabIndex = 2;
+            this.lblNombreAseguradora.Text = "BROKER DE SEGURO";
+            // 
             // Logo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PryPerezIE.Properties.Resources.Sin_título;
             this.ClientSize = new System.Drawing.Size(879, 504);
+            this.Controls.Add(this.lblNombreAseguradora);
             this.Controls.Add(this.lblPorcentaje);
             this.Controls.Add(this.progressBar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Logo";
-            this.Text = "Logo";
+            this.Text = "Broker de Seguro";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -84,6 +98,7 @@
         private System.Windows.Forms.Timer tmProgreso;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label lblPorcentaje;
+        private System.Windows.Forms.Label lblNombreAseguradora;
     }
 }
 
