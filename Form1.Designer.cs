@@ -88,6 +88,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Logo";
             this.Text = "Broker de Seguro";
+            this.Load += new System.EventHandler(this.Logo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

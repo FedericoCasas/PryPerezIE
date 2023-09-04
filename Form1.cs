@@ -33,5 +33,10 @@ namespace PryPerezIE
 
 
         }
+
+        private void Logo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

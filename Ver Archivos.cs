@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace PryPerezIE
 {
@@ -22,6 +23,24 @@ namespace PryPerezIE
             PaginaPrincipal paginaPrincipal = new PaginaPrincipal();
             paginaPrincipal.Show();
             this.Close();
+        }
+
+        private void btnNuevaCarpeta_Click(object sender, EventArgs e)
+        {
+
+            //string ruta = lblEjemplo.Text;
+
+            VentanaCarpeta.ShowDialog();
+
+            lblEjemplo.Text = VentanaCarpeta.SelectedPath;
+            //seleccionar carpeta
+
+            //treeView1.Nodes.Add
+
+
+
+
+
         }
     }
 }
