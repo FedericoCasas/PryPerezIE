@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace PryPerezIE
 {
@@ -33,7 +34,22 @@ namespace PryPerezIE
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
-            StreamWriter NewProveedores = new StreamWriter("Proveedores", false);
+            StreamWriter NewProveedores = new StreamWriter("Proveedores", true);
+
+            var a = "";
+
+            if (chkActivo.Checked == true) {
+                a = "activo";
+            } else
+                {
+                a = "inactivo";
+            }
+
+            NewProveedores.WriteLine(txtNombre.Text + " " + txtEmail.Text + " " + txtTelefono.Text + " " + txtDireccion.Text + " " + txtNroTributario.Text + " " + txtComentario.Text + " " + a);
+
+            NewProveedores.Close();
+
+
 
 
         }
