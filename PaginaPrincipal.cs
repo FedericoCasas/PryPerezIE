@@ -41,5 +41,10 @@ namespace PryPerezIE
         {
             this.Close();
         }
+
+        private void PaginaPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

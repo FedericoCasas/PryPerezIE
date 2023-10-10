@@ -97,6 +97,7 @@
             this.Name = "PaginaPrincipal";
             this.Text = "PaginaPrincipal";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PaginaPrincipal_FormClosing);
+            this.Load += new System.EventHandler(this.PaginaPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

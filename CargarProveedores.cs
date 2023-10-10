@@ -19,6 +19,9 @@ namespace PryPerezIE
             InitializeComponent();
         }
 
+        public static string rutaArchivo = "../../Resources/Carpetas de Proveedores/Datos Proveedores/ListadoAseguradores.csv";
+
+
         private void volverToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PaginaPrincipal paginaPrincipal = new PaginaPrincipal();
@@ -34,9 +37,12 @@ namespace PryPerezIE
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
+
+            
+        
             StreamWriter NewProveedores = new StreamWriter("Proveedores", true);
 
-            var a = "";
+            /*var a = "";
 
             if (chkActivo.Checked == true) {
                 a = "activo";
@@ -45,12 +51,18 @@ namespace PryPerezIE
                 a = "inactivo";
             }
 
-            NewProveedores.WriteLine(txtNombre.Text + " " + txtEmail.Text + " " + txtTelefono.Text + " " + txtDireccion.Text + " " + txtNroTributario.Text + " " + txtComentario.Text + " " + a);
+            NewProveedores.WriteLine(/*txtModificarApertura.Text ....+ " " + a);
 
             NewProveedores.Close();
+                */
+           */
+        }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
 
-
+            
+            
 
         }
     }
